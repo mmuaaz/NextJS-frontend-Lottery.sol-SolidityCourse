@@ -19,6 +19,10 @@ export default function LotteryEntrance() {
     const [recentWinner, setRecentWinner] = useState("0")
     ;/"useState" hook will allow re-render of the front-end, otherwise the entrance fee wont be visible as the webpage doesnt get it on time/
     const dispatch = useNotification() //gives us that "pop-up" that we want
+
+    //MOrali is smart enough to know that which is a view function and which is a tx, so the tx one populate Metamask to popup
+
+    //enterRaffle is a tx function
     const {
         runContractFunction: enterRaffle,
         isLoading,
@@ -30,6 +34,8 @@ export default function LotteryEntrance() {
         params: {},
         msgValue: entranceFee /* */,
     })
+
+    //getEntranceFee is a view function
     const { runContractFunction: getEntranceFee } = useWeb3Contract({
         abi: abi,
         contractAddress: raffleAddress,
@@ -85,12 +91,12 @@ export default function LotteryEntrance() {
         })
     }
     return (
-        <div className="p-5">
-            ARE YOU READY!!!
+        <div className="p-5 rounded ml-auto">
+            Ready to Go ! !
             {raffleAddress ? (
                 <div>
                     <button
-                        className="bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded ml-auto"
+                        className="bg-blue-400 hover:bg-blue-500 text-white  font-bold py-2 px-4 rounded ml-auto"
                         onClick={async function () {
                             await enterRaffle({
                                 onSuccess: handleSuccess,

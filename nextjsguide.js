@@ -87,3 +87,16 @@
 //to not have the static code
 ;/import the "out" folder/ //to IPFS and pin it to the local node; copy the CID and open page on the browser ipfs://<CID>
 ;/Hosting on IPFS & Filecoin using Fleek/ //fleek.co
+//Import your repo on GitHub> connect with Github> select Repository> install & Authorize> DONE
+//Choose the repo> Framework: NEXTJS > Build Command: (replace "npm" with "yarn") change the last command to ;/yarn run next export/ > Deploy Site
+// This will run everything and run all the command itself, and gives us a normal URL which we can use
+;/FileCoin is a BLOCK CHAIN/ // that helps to pin the data and use decentrazlied data to do so; fleek helps us to create those deals and pin our data
+//WHen you make a deal with one or more storage providers to store your data, The provider generates a proof of replication, So this proves
+//that storage provider is storing a unique copy of your original data over time to make sure that this data is persisted, these storage providers must prove
+//that they still have random subsets of this client data and they create proof of space times, These proofs  stored on the BC, so anyone at anytime
+//can also check that this is true,/ It also makes up the mechanism by which miners are rewarded or penalized, because you have to stake File on the network
+//in order to become a storage provider. So when a storage deal comes to an end, or as user you can opt to let it expire or renew the deal. If you opt for
+//renewal, then the providers again bid to host this content. So this creates an efficient market for pricing a continual efficient market for pricing as
+//well. It can even go negative. So the storage provider can even pay you to store your data if its an important data set due to some of the block rewards
+//that are being offered by the filecoin foundation as well. So these mechanisms are what built in the not just data permenence, but data timeframes,
+//sovereignty too its your data
