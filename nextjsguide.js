@@ -100,3 +100,10 @@
 //well. It can even go negative. So the storage provider can even pay you to store your data if its an important data set due to some of the block rewards
 //that are being offered by the filecoin foundation as well. So these mechanisms are what built in the not just data permenence, but data timeframes,
 //sovereignty too its your data
+;/made some changes in next.config.js file to avoid some error/
+//module.exports = {
+//   images: {
+//     loader: 'akamai',
+//     path: '',
+//   },
+// }
