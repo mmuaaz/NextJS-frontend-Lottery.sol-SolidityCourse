@@ -10,4 +10,4 @@ const nextConfig = {
 // }
 
 // module.exports = { nextConfig, experimental }
-module.exports = { nextConfig, images: { loader: "custom" } }
+module.exports = { nextConfig, images: { loader: "akamai", path: "" } }
